@@ -105,7 +105,7 @@ for npaContour in npaContours:
 cv2.imshow("rotaedREC.png",	rotated)
 
 #-----------------------findAlignedBoxes --------------------------------------------
-'''
+
 def findAlignedBoxes(boundBoxes):
 	result = [];
 	result.append(boundBoxes[0])
@@ -119,24 +119,7 @@ def findAlignedBoxes(boundBoxes):
 			if(boundBefore != boundBoxes[len(boundBoxes)-1]):
 				result.append(boundAfter)
 	return result;
-'''
-def findAlignedBoxes(boundBoxes):
-	result = [];
-	result.append(boundBoxes[0])
-	for i in range(len(boundBoxes)):
-		'''
-		boundBefore = boundBoxes[i]
-		[x,y,w,h] = boundBefore
-		'''
-		while((boundBoxes[len(boundBoxes[i])])):
-			[x,y,w,h] = boundBoxes[0]
-			boundAfter = boundBoxes[i+1]
-			[x1,y1,w1,h1] =boundAfter
-		if(abs(y - y1) < digitYAlighment and abs(h - h1) < 5 ):
-			if(boundBoxes[0] != boundBoxes[len(boundBoxes)-1]):
-				result.append(boundAfter)
-	return result;
-	
+
 alignedBoundBoxes = ((),)
 
 for i in range(len(boundingBoxes)):
