@@ -70,35 +70,98 @@ skew_deg = detectSkew()
 rotated = ndimage.rotate(img, skew_deg)
 cv2.imshow("rotated", rotated)
 
-
 cv2.imshow("rotatedEdge.png",edges)
 
 #cv2.namedWindow('counter', cv2.WINDOW_NORMAL)
 cv2.imshow('counter', img)
+
+
+# find Contours -----------------------
+#canny() for edge of the rotaing image and clone it 
+grayAffined = cv2.cvtColor(rotated,cv2.COLOR_BGR2GRAY)
+edgesAffined = cv2.Canny(grayAffined,200,250,apertureSize = 3)
+edgesAffinedCopy = edgesAffined.copy()
+
+imgContours, npaContours, npaHierarchy = cv2.findContours(edgesAffinedCopy, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+#filter contours by size of bouding rectangles
+
+digitMinHeight = 10;
+digitMaxHeight = 190;
+digitYAlighment = 10
+boundingBoxes = []
+filteredContours = []
+for npaContour in npaContours:
+	bound=cv2.boundingRect(npaContour)
+	[X, Y, W, H]  = bound
+	if(H > digitMinHeight and H < digitMaxHeight and W > 5 and W < H):
+		boundingBoxes.append(bound)
+		filteredContours.append(npaContour)
+		cv2.rectangle(rotated, (X,Y),(X+W,Y+H),(0,255,0),2)
+		print(type(bound))
+		print(bound)
+#print(len(boundingBoxes) )
+#print( len(filteredContours))
+
+cv2.imshow("rotaedREC.png",	rotated)
+
+#-----------------------findAlignedBoxes --------------------------------------------
+'''
+def findAlignedBoxes(boundBoxes):
+	result = [];
+	result.append(boundBoxes[0])
+	for i in range(len(boundBoxes)):
+		boundBefore = boundBoxes[i]
+		[x,y,w,h] = boundBefore
+		if(boundBefore != boundBoxes[len(boundBoxes)-1]):
+			boundAfter = boundBoxes[i+1]
+			[x1,y1,w1,h1] =boundAfter
+		if(abs(y - y1) < digitYAlighment and abs(h - h1) < 5 ):
+			if(boundBefore != boundBoxes[len(boundBoxes)-1]):
+				result.append(boundAfter)
+	return result;
+'''
+def findAlignedBoxes(boundBoxes):
+	result = [];
+	result.append(boundBoxes[0])
+	for i in range(len(boundBoxes)):
+		'''
+		boundBefore = boundBoxes[i]
+		[x,y,w,h] = boundBefore
+		'''
+		while((boundBoxes[len(boundBoxes[i])])):
+			[x,y,w,h] = boundBoxes[0]
+			boundAfter = boundBoxes[i+1]
+			[x1,y1,w1,h1] =boundAfter
+		if(abs(y - y1) < digitYAlighment and abs(h - h1) < 5 ):
+			if(boundBoxes[0] != boundBoxes[len(boundBoxes)-1]):
+				result.append(boundAfter)
+	return result;
+	
+alignedBoundBoxes = ((),)
+
+for i in range(len(boundingBoxes)):
+	temps = findAlignedBoxes(boundingBoxes);
+	if (len(temps) > len(alignedBoundBoxes)):
+		alignedBoundBoxes = temps
+
+for i in range(len(alignedBoundBoxes)):
+	print(type(alignedBoundBoxes[i]))
+	print(alignedBoundBoxes[i])
+	[xF,yF,wF,hF] = alignedBoundBoxes[i]
+	cv2.rectangle(rotated, (xF,yF),(xF+wF,yF+hF),(0,0,255),2)
+cv2.imshow("rotaedRECFilter.png",	rotated)
+
+# sort it left to right 
+
+
+cv2.imshow('edgesAffined.png', edgesAffined)
+
 k = cv2.waitKey(0)
-
-
 if k == 27: 			# wait for ESC key to exit
 	cv2.destroyAllWindows()
 elif k == ord('s'):		# wait for 's' to save and exit
 	cv2.imwrite('grayedCounter.png', img)
+	cv2.imwrite('rotatedimg.png', rotated)
 	cv2.destroyAllWindows()
 
 
-'''
-digits = [];
-digits.clear();
-
-# convert to gray
-cvtColor(_img, _imgGray, CV_BGR2GRAY);
-
-# initial rotation to get the digits up --------------muhim emes manga
-rotate(_config.getRotationDegrees());
-
-# detect and correct remaining skew (+- 30 deg)
-float skew_deg = detectSkew();
-rotate(skew_deg);
-
-# find and isolate counter digits
-findCounterDigits();
-'''
