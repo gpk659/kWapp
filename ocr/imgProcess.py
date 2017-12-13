@@ -191,10 +191,10 @@ f1 = '%Y-%m-%d %H:%M:%S'
 now = strftime(f1,gmtime());
 
 # Connect to the database
-connection = pymysql.connect(host='51.255.167.206',
-                             user='kwapp',
-                             password='P@ssw0rd',
-                             db='Kwapp_Projet',
+connection = pymysql.connect(host='*****',
+                             user='****',
+                             password='******',
+                             db='******',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
