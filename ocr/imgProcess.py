@@ -8,6 +8,9 @@ import pytesseract
 import pymysql.cursors
 import pymysql
 from time import gmtime, strftime
+#import urllib.request
+#import urllib.parse
+import requests
 
 img = cv2.imread("counter.png");
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -29,7 +32,7 @@ def drawLines(lines):
 
 		cv2.line(img,(x1,y1),(x2,y2),(0,0,255),1)
 	cv2.imwrite('houghlines2.png',img)
-
+cv2.imshow("gray.png", gray);
 #detect the skew of the image by finding almost (+- 30 deg) horizontal lines
 def detectSkew():
 	edges = cv2.Canny(gray,200,250,apertureSize = 3)
@@ -199,25 +202,42 @@ cv2.imshow("rotaedRECFilterAF.png", rotated)
 cv2.imwrite("rotaedRECFilterAF.png", rotated)
 
 cv2.imshow('edgesAffined.png', edgesAffined)
-'''
 # connect to database & insert data to it
 f0 = "%Y%m%d%H%M%S"
 f1 = '%Y-%m-%d %H:%M:%S'
 now = strftime(f1,gmtime());
 
+path='http://www.kwapp.eu/connect/insertOCR.php'
+mydata = {'$DataCapture':testText, '$CaptureUserDate':now, '$userOCR':2}
+resp = requests.post(url = path, data =  mydata)
+
+'''
+path='http://www.kwapp.eu/connect/insertOCR.php' 
+#mydata=[('Capture',testText),('DateCapture',now), ('idUserCompteur',4)]
+mydata = {'Capture':testText, 'DateCapture':now, 'idUserCompteur':4}
+data = urllib.parse.urlencode(mydata)
+#mydata=urllib.parse.urlencode(mydata) 
+data = data.encode('utf-8')
+req = urllib.request.Request(path,data)
+#req.add_header("Content-type", "application/x-www-form-urlencoded")
+resp = urllib.request.urlopen(req)
+respData = resp.read()
+print(respData)
+
+
 # Connect to the database
 connection = pymysql.connect(host='51.255.167.206',
-                             user='kwapp',
+                             user='adminkwapp',
                              password='P@ssw0rd',
-                             db='Kwapp_Projet',
+                             db='Projet_kwapp',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
 try:
     with connection.cursor() as cursor:
         # Create a new record
-        sql = "INSERT INTO Compteur(Capture, DateCapture) VALUES (%s,%s)"
-        cursor.execute(sql, (testText,now))
+        sql = "INSERT INTO Compteur(Capture, DateCapture, idUserCompteur) VALUES (%s,%s, %s)"
+        cursor.execute(sql, (testText,now, 3))
 
     # connection is not autocommit by default. So you must commit to save
     # your changes.
@@ -226,12 +246,11 @@ try:
         # Read a single record
         sql = "SELECT `*` FROM `Compteur`"
         cursor.execute(sql)
-        result = cursor.fetchone()
+        result = cursor.fetchall()
         print(result)
 finally:
     connection.close()
 '''
-
 k = cv2.waitKey(0)
 if k == 27: 			# wait for ESC key to exit
 	cv2.destroyAllWindows()
