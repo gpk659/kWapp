@@ -1,3 +1,7 @@
+
+![logo](https://github.com/gpk659/kWapp/blob/master/logo.png)
+
+
 # Introduction
 
 Dans le cadre du YEP (Young Enterprise Project) qui est un programme d'apprentissage de création d'entreprise à travers lequel des groupes ont été créée. Il nous a été demandé, en collaboration avec la maison du développement Durable d'initier un projet.  La thématique était la suivante : réduire la consommation d'électricité afin d'encourager le maintien écologique de notre système. 
