@@ -1,6 +1,8 @@
 
-![logo](https://github.com/gpk659/kWapp/blob/master/logo.png)
 
+<p align="center">
+  <img src="https://github.com/gpk659/kWapp/blob/master/logo.png">
+</p>
 
 # Introduction
 
