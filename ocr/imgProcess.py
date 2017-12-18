@@ -120,10 +120,17 @@ alignedBoundBoxes = '' # ((),)
 
 def split_alignedBoxes(tempsArray):
 	sortedTemps = sorted(tempsArray, key=lambda tup: tup[1]);
+	sumY = 0
+	array = []
 	for i in range(len(sortedTemps)):
-		if (abs(sortedTemps[i][1] - sortedTemps[i+1][1]) > 15):
-			return sortedTemps[0:i+1], sortedTemps[i+1:]
-		#else: return sortedTemps;
+		sumY += sortedTemps[i][1];
+	print(sumY / float(len(sortedTemps)))
+	for i in range(len(sortedTemps)):
+		if ((sortedTemps[i][1] + sortedTemps[i+1][1])/float(2) >= sumY / float(len(sortedTemps))):
+			return sortedTemps[0:i+1], sortedTemps[i+1:]		
+		else:
+			array.append(sortedTemps[i])
+	return array
 for i in range(len(sorted_by_Y)):
 	temps = []
 	#print('temps1')
@@ -135,11 +142,19 @@ for i in range(len(sorted_by_Y)):
 	print(temps)
 	temps = list(set(temps))
 	#if len(split_alignedBoxes(temps)>1): for i in len(split_alignedBoxes(temps)>1: 
-	array1, array2 = split_alignedBoxes(temps)
+	arrayMaybe = split_alignedBoxes(temps)
 	print('arrays')
-	print(array1)
-	print(array2)
-	alignedBoundBoxes = array1 if (len(array1)>len(array2)) else array2
+	print(len(arrayMaybe))
+	#print(array2)
+	tempsArray = []
+	if (len(arrayMaybe)==1):
+		tempsArray = arrayMaybe		
+	else: 
+		for i in range(len(arrayMaybe)):
+			if len(tempsArray)<len(arrayMaybe[i]):
+				tempsArray =  arrayMaybe[i]
+	alignedBoundBoxes = tempsArray	
+	#alignedBoundBoxes = arrayMaybe[0] if (len(arrayMaybe[0])>len(arrayMaybe[1])) else arrayMaybe[1]
 	#if (len(temps) > len(alignedBoundBoxes)):
 	#	alignedBoundBoxes = temps
 #print('temps')
@@ -191,10 +206,10 @@ f1 = '%Y-%m-%d %H:%M:%S'
 now = strftime(f1,gmtime());
 
 # Connect to the database
-connection = pymysql.connect(host='*****',
-                             user='****',
-                             password='******',
-                             db='******',
+connection = pymysql.connect(host='51.255.167.206',
+                             user='kwapp',
+                             password='P@ssw0rd',
+                             db='Kwapp_Projet',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
