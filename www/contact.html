@@ -29,7 +29,6 @@
 									<li><a href="tarifs.html">Tarifs</a></li>
 								</ul>
 							</li>
-							<li><a href="connexion.php" class="button special">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -48,23 +47,23 @@
 
 							<!-- Content -->
 								<div class="content">
-									<form>
+									<form method="post" action="contact@kwapp.eu">
 										<div class="row 50%">
 											<div class="6u 12u(mobile)">
-												<input type="text" name="name" placeholder="Nom" />
+												<input type="text" name="name" placeholder="Nom"  required/>
 											</div>
 											<div class="6u 12u(mobile)">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name="email" placeholder="Email" required/>
 											</div>
 										</div>
 										<div class="row 50%">
 											<div class="12u">
-												<input type="text" name="subject" placeholder="Sujet" />
+												<input type="text" name="subject" placeholder="Sujet" required/>
 											</div>
 										</div>
 										<div class="row 50%">
 											<div class="12u">
-												<textarea name="message" placeholder="Message" rows="7"></textarea>
+												<textarea name="message" placeholder="Message" rows="7" required></textarea>
 											</div>
 										</div>
 										<div class="row">
@@ -97,10 +96,13 @@
 				</div>
 				<div>
 					<ul class="copyright">
-						<li>&copy; Copyright 2017</li><li>kWapp - All rights reserved</li>
-						<li>&copy; WebDesigners : Grégory Pyck & Jérémy Grégoire</li>
-						<li>&copy; AppBuilders : Arnaud Maes & Ivan Hervé</li>
-						<li>&copy; ElectronicBuilders : Joel Yepgang & Eminjan Obulkasim</li>
+						<li>&copy; Copyright 2017</li> kWapp - Tout droits réservés</br></br>
+						Grégory Pyck & Jérémy Grégoire
+						<li>Arnaud Maes & Ivan Hervé</li>
+						<li>Joel Yepgang & Eminjan Obulkasim</li>
+					</ul>
+					<ul>
+						<li><a href="https://drive.google.com/file/d/1etXtW5FtW2XkDnNFrWowOIvUTM26kwfr/view?usp=sharing">Politique de confidentialité</a></li>
 					</ul>
 				</div>
 			</footer>

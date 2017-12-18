@@ -1789,7 +1789,7 @@
 			left: 0;
 			position: absolute;
 			top: 0;
-			width: 100%;
+			/* width: 100%; */
 		}
 
 		.image.fit {
@@ -1801,9 +1801,13 @@
 				width: 100%;
 			}
 
-		.image.featured {
+		.image.featured.null {
 			display: block;
 			margin: 0 0 2em 0;
+		}
+		.image.featured.cycle {
+			display: block;
+			margin: 0 0 5.75em 0;
 		}
 
 			.image.featured img {
@@ -1825,6 +1829,7 @@
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
+			color: #006400;
 		}
 
 		.icon.circle {
@@ -2107,11 +2112,10 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #7ecb54;
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
-			color: #fff;
+			color: black;
 		}
 
 			.wrapper.style2 .button:hover {
