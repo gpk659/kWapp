@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.ivanherve.kwapp.resultats">
+
+    <LinearLayout
+        android:id="@+id/resultats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="20dp"
+            android:background="#40404040">
+
+            <TextView
+                android:id="@+id/textViewTitre1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Consommation Actuelle"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/textViewValeur1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/valeur"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#404040"
+                android:textSize="17dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="50dp"
+            android:background="#40404040">
+
+            <TextView
+                android:id="@+id/textViewTitre2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Résultat de Calcul"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textViewValeur2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:text="80 €"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#404040"
+                android:textSize="17dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:text="Pour plus de détail sur la consommation, appuyer sur Graphique juste en-dessous. \nCela indiquera vos consommations antérieurs ainsi que celle de vos différents appareils ;)"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:context=".MainActivity"
+            android:layout_centerHorizontal="true">
+
+
+            <Button
+                android:id="@+id/button_Graphique"
+                app:layout_widthPercent="33%"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Graphique"
+                android:textSize="10dp"
+                android:onClick="onClickGraphique"/>
+
+            <Button
+                android:id="@+id/button_Calcul"
+                app:layout_widthPercent="33%"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button_Graphique"
+                android:layout_gravity="bottom"
+                android:text="Calcul"
+                android:textSize="10dp"
+                android:onClick="onClickCalcul"/>
+
+            <Button
+                android:id="@+id/button_Resultats"
+                app:layout_widthPercent="33%"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button_Calcul"
+                android:layout_gravity="bottom"
+                android:text="Résultats"
+                android:textSize="10dp"
+                android:onClick="onClickResultats"/>
+            <!--
+                        <Button
+                            android:id="@+id/button_Parametre"
+                            app:layout_widthPercent="25%"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/button_Resultats"
+                            android:layout_gravity="bottom"
+                            android:text="Paramètre"
+                            android:textSize="10dp"
+                            android:onClick="onClickParametre"/>
+                        -->
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

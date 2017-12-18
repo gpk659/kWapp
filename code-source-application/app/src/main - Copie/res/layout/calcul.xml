@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.ivanherve.kwapp.parametre">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:text="Cette fonctionnalité vous permet d'avoir un résultat de votre consommation et du prix selon VOS estimmations. \nRentrez vos données et cilquez sur Calcul, vous verrez votre consommation global sur un mois et un prix estimé"/>
+
+        <LinearLayout
+            android:id="@+id/lesCalculs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.percent.PercentRelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context=".MainActivity"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:id="@+id/liste"
+                    app:layout_widthPercent="35%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fitsSystemWindows="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Appareil"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerapp1"
+                        android:autofillHints="Frigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:transitionName="choix"
+                        tools:layout_editor_absoluteY="41dp"
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerapp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:transitionName="choix"
+                        tools:layout_editor_absoluteY="81dp"
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:transitionName="choix"
+                        tools:layout_editor_absoluteY="81dp"
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:transitionName="choix"
+                        tools:layout_editor_absoluteY="81dp"
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:transitionName="choix"
+                        tools:layout_editor_absoluteY="81dp"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/utilHeure"
+                    app:layout_widthPercent="30%"
+                    android:layout_toRightOf="@+id/liste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:text="Utilistion Heure"
+                        tools:layout_editor_absoluteY="0dp"
+                        tools:layout_editor_absoluteX="100dp" />
+
+                    <EditText
+                        android:id="@+id/editText1a"
+                        android:hint="Ex : 24 h"
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="41dp" />
+
+                    <EditText
+                        android:id="@+id/editText2a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="41dp" />
+
+                    <EditText
+                        android:id="@+id/editText3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="41dp" />
+
+                    <EditText
+                        android:id="@+id/editText1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="41dp" />
+
+                    <EditText
+                        android:id="@+id/editText1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="41dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/consoHeure"
+                    app:layout_widthPercent="30%"
+                    android:layout_toRightOf="@+id/utilHeure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:text="Consommation heure"
+                        tools:layout_editor_absoluteX="220dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <EditText
+                        android:id="@+id/editText2a"
+                        android:hint="Ex : 201 kWh"
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="81dp" />
+
+                    <EditText
+                        android:id="@+id/editText2b"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteY="81dp"
+                        tools:layout_editor_absoluteX="220dp" />
+
+                    <EditText
+                        android:id="@+id/editText3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="121dp" />
+
+                    <EditText
+                        android:id="@+id/editText3b"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteY="121dp"
+                        tools:layout_editor_absoluteX="220dp" />
+
+                    <EditText
+                        android:id="@+id/editText4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="161dp" />
+
+                </LinearLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:defaultFocusHighlightEnabled="true"
+                    android:text=""
+                    android:textStyle=""
+                    android:textSize="25dp"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:id="@+id/resultatview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" => 2002.2 kWh"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/resultatprix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="80 €"
+                    android:textStyle="bold"
+                    android:textSize="25dp"/>
+
+            </android.support.percent.PercentFrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:context=".MainActivity"
+            android:layout_centerHorizontal="true">
+
+
+            <Button
+                android:id="@+id/button_Graphique"
+                app:layout_widthPercent="33%"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Graphique"
+                android:textSize="10dp"
+                android:onClick="onClickGraphique"/>
+
+            <Button
+                android:id="@+id/button_Calcul"
+                app:layout_widthPercent="33%"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button_Graphique"
+                android:layout_gravity="bottom"
+                android:text="Calcul"
+                android:textSize="10dp"
+                android:onClick="onClickCalcul"/>
+
+            <Button
+                android:id="@+id/button_Resultats"
+                app:layout_widthPercent="33%"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/button_Calcul"
+                android:layout_gravity="bottom"
+                android:text="Résultats"
+                android:textSize="10dp"
+                android:onClick="onClickResultats"/>
+            <!--
+                        <Button
+                            android:id="@+id/button_Parametre"
+                            app:layout_widthPercent="25%"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/button_Resultats"
+                            android:layout_gravity="bottom"
+                            android:text="Paramètre"
+                            android:textSize="10dp"
+                            android:onClick="onClickParametre"/>
+                        -->
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,141 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:2:1-61:12
+	package
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:7:5-59:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\60176094d624328227a223eda4c5d5899aefb648\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\0f6ea07c69274c04dd90e1ab06a0182a36a5880b\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\857817610f898a18e6095d86416684b5146c3ba3\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Maestrict\.android\build-cache\8468f4c32dbc1ae0b18968a3e40c7cccb3dd6dcc\output\AndroidManifest.xml:9:5-20
+MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\Maestrict\.android\build-cache\9d1f2bc96eec28f48d7f84f3437751fc48a3932b\output\AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\9a8503cc5ffe846f219f0ddd369f2c3731cd7918\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\e335f7e9b62842317f0712ddac787a2f5fb95598\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\804c2d6122a49dbc503313e576a5f15c5d953fb2\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\e975af3b55d32888452e528c8a571d9d1bf86e42\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\1f4f3991cd2bd9d76a43071ad6dc016292d349b2\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:percent:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\1c77aec88c76cd5869ffcda36def8e1582ac9f4a\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\4373826e46ad61d7513bdf2f11b89245dfade091\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:10:9-41
+	android:supportsRtl
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:12:9-35
+	android:roundIcon
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:11:9-54
+	android:allowBackup
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:8:9-35
+	android:icon
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:9:9-43
+	android:theme
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.example.ivanherve.kwapp.MainActivity
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:15:9-22:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:16:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.example.ivanherve.kwapp.graphique
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:24:9-27:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:25:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:24:19-44
+activity#com.example.ivanherve.kwapp.SignUp
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:29:9-32:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:30:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:29:19-41
+activity#com.example.ivanherve.kwapp.Login
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:34:9-37:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:35:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:34:19-40
+activity#com.example.ivanherve.kwapp.resultats
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:39:9-42:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:40:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:39:19-44
+activity#com.example.ivanherve.kwapp.accueil
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:44:9-47:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:45:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:44:19-42
+activity#com.example.ivanherve.kwapp.calcul
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:49:9-52:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:50:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:49:19-41
+activity#com.example.ivanherve.kwapp.parametre
+ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:54:9-57:20
+	android:label
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:55:13-45
+	android:name
+		ADDED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml:54:19-44
+uses-sdk
+INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\60176094d624328227a223eda4c5d5899aefb648\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\0f6ea07c69274c04dd90e1ab06a0182a36a5880b\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\857817610f898a18e6095d86416684b5146c3ba3\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Maestrict\.android\build-cache\8468f4c32dbc1ae0b18968a3e40c7cccb3dd6dcc\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jjoe64:graphview:4.2.1] C:\Users\Maestrict\.android\build-cache\9d1f2bc96eec28f48d7f84f3437751fc48a3932b\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\9a8503cc5ffe846f219f0ddd369f2c3731cd7918\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\e335f7e9b62842317f0712ddac787a2f5fb95598\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\804c2d6122a49dbc503313e576a5f15c5d953fb2\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\e975af3b55d32888452e528c8a571d9d1bf86e42\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\1f4f3991cd2bd9d76a43071ad6dc016292d349b2\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:percent:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\1c77aec88c76cd5869ffcda36def8e1582ac9f4a\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\4373826e46ad61d7513bdf2f11b89245dfade091\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.wang.avi:library:2.1.3] C:\Users\Maestrict\.android\build-cache\f9a49b1b7179361e3a4fd3d5b8f504783b7e279e\output\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\60176094d624328227a223eda4c5d5899aefb648\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Maestrict\Desktop\kWapp2\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\60176094d624328227a223eda4c5d5899aefb648\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\0f6ea07c69274c04dd90e1ab06a0182a36a5880b\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\857817610f898a18e6095d86416684b5146c3ba3\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\9a8503cc5ffe846f219f0ddd369f2c3731cd7918\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\e335f7e9b62842317f0712ddac787a2f5fb95598\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\804c2d6122a49dbc503313e576a5f15c5d953fb2\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\e975af3b55d32888452e528c8a571d9d1bf86e42\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\1f4f3991cd2bd9d76a43071ad6dc016292d349b2\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:percent:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\1c77aec88c76cd5869ffcda36def8e1582ac9f4a\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\4373826e46ad61d7513bdf2f11b89245dfade091\output\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\60176094d624328227a223eda4c5d5899aefb648\output\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Maestrict\.android\build-cache\60176094d624328227a223eda4c5d5899aefb648\output\AndroidManifest.xml:26:9-47

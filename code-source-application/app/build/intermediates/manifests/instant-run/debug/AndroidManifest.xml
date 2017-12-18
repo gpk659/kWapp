@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ivanherve.kwapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ivanherve.kwapp.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ivanherve.kwapp.SignUp"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.ivanherve.kwapp.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.ivanherve.kwapp.resultats"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.ivanherve.kwapp.graphique"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.ivanherve.kwapp.calcul"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.ivanherve.kwapp.parametre"
+            android:label="@string/app_name" >
+        </activity>
+
+        <provider
+            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:authorities="com.example.ivanherve.kwapp.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

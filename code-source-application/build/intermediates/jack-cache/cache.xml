@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\1c77aec88c76cd5869ffcda36def8e1582ac9f4a\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="fb5addcf29ec0f677346aa9f740c7d56f457a6d9">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-a19cce681ced8a3896bfc0b653215fa44bfc0c7b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\AppData\Local\Android\Sdk\platforms\android-26\optional\org.apache.http.legacy.jar"
+        revision="26.0.2"
+        sha1="d5b8c556427a60ed5f7f0abc415555de7bbba1ad">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\org.apache.http.legacy-43be5db90a132fc963f0e5dd06be707535f9df71.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\804c2d6122a49dbc503313e576a5f15c5d953fb2\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-9f5d7e13ce2e19e4de8be5a9987a4089b3b3d20d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\AppData\Local\Android\Sdk\platforms\android-26\android.jar"
+        revision="26.0.2"
+        sha1="18eaee6ff2a1c15c603daafb41277ea9376f30b5">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\android-a5599e8492c2aa7e5d4447595bab2bfd823d66df.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\1f4f3991cd2bd9d76a43071ad6dc016292d349b2\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-fb89f74296a71eca6870dac7e8a467e10019bce2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\9d1f2bc96eec28f48d7f84f3437751fc48a3932b\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="987adec819c9a98faf215814f41195da48fc724e">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-a59c0178db257946d993b352f0bef9120234f61f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\e975af3b55d32888452e528c8a571d9d1bf86e42\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-7c4a79741ce7af081d87b64954d84e44e9fa6504.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.2.4\7abd1ecef320da6a7679b137083151401fe8bf43\MPAndroidChart-v2.2.4.jar"
+        revision="26.0.2"
+        sha1="7abd1ecef320da6a7679b137083151401fe8bf43">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\MPAndroidChart-v2.2.4-3526346dd4fea3f28385290e5cb5c9c789e85b21.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\f9a49b1b7179361e3a4fd3d5b8f504783b7e279e\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-2050db1ee293c8b992a8e8931ae95644cad0a9f4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\e335f7e9b62842317f0712ddac787a2f5fb95598\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-e63a1d6e1917e7a1b07fed3aabc147c49b863b06.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\9a8503cc5ffe846f219f0ddd369f2c3731cd7918\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-5d32f081998843842037d3d1a496a6378f638a66.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.gradle\caches\modules-2\files-2.1\org.jdom\jdom2\2.0.6\6f14738ec2e9dd0011e343717fa624a10f8aab64\jdom2-2.0.6.jar"
+        revision="26.0.2"
+        sha1="6f14738ec2e9dd0011e343717fa624a10f8aab64">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\jdom2-2.0.6-d3c47919fda97d1817e081c3497207c4c4e28176.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\0f6ea07c69274c04dd90e1ab06a0182a36a5880b\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-796495e0e0c96d60dd6919533d9654600636e744.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\4373826e46ad61d7513bdf2f11b89245dfade091\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-47e383e0e77d25eb604da923706789f32bb12156.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\support-annotations-26.0.0-alpha1-9e10f44208e58b742864229c29de97ae61b4f010.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\60176094d624328227a223eda4c5d5899aefb648\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-bccfaeb1005841bd9fa41d9f921d853482f06d0e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\constraint-layout-solver-1.0.2-97aaae86dadd938aba1821492d467910d12bde10.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\8468f4c32dbc1ae0b18968a3e40c7cccb3dd6dcc\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-590d37386c8948cf211f3e0e4b6e2ce583e74ebb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\Desktop\kWapp2\app\libs\mysql-connector-java-5.1.44-bin.jar"
+        revision="26.0.2"
+        sha1="c5c76a610587bde4af517e457bc66f8f0339caac">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\mysql-connector-java-5.1.44-bin-c5985352a57a0a2da7384850d7fe81022c586b85.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maestrict\.android\build-cache\857817610f898a18e6095d86416684b5146c3ba3\output\jars\classes.jar"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\Maestrict\Desktop\kWapp2\app\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-065ad2492ef17321e0cbb3de6c5e220db9636e6e.jar" />
+    </item>
+
+</items>
