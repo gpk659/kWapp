@@ -11,9 +11,10 @@ from time import gmtime, strftime
 import urllib.request, urllib.parse
 import requests
 
-img = cv2.imread("counter.png");
+img = cv2.imread("counter2.png");
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-edges = cv2.Canny(gray,200,250,apertureSize = 3)
+#edges = cv2.Canny(gray,200,250,apertureSize = 3)
+edges = cv2.Canny(gray,100,200,apertureSize = 3)
 lines = cv2.HoughLines(edges, 1, np.pi/180,140)
 
 def drawLines(lines):
